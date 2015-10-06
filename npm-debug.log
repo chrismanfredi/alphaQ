@@ -1,0 +1,44 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'package.json' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /Users/jeffreymendez/Projects/class2/package.json
+5 warn package.json form_gen@0.1.0 No repository field.
+6 warn package.json form_gen@0.1.0 No README data
+7 verbose installManyTop reading scoped package data from /Users/jeffreymendez/Projects/class2/node_modules/bower/package.json
+8 verbose installManyTop reading scoped package data from /Users/jeffreymendez/Projects/class2/node_modules/express/package.json
+9 verbose installManyTop reading scoped package data from /Users/jeffreymendez/Projects/class2/node_modules/express-handlebars/package.json
+10 verbose installManyTop reading scoped package data from /Users/jeffreymendez/Projects/class2/node_modules/nodemon/package.json
+11 verbose readDependencies loading dependencies from /Users/jeffreymendez/Projects/class2/package.json
+12 silly cache add args [ 'package.json', null ]
+13 verbose cache add spec package.json
+14 silly cache add parsed spec { raw: 'package.json',
+14 silly cache add   scope: null,
+14 silly cache add   name: null,
+14 silly cache add   rawSpec: 'package.json',
+14 silly cache add   spec: '/Users/jeffreymendez/Projects/class2/package.json',
+14 silly cache add   type: 'local' }
+15 silly addLocalTarball shasum (computed) abaa30fd310476c2591090baa4cde244577657f9
+16 verbose addTmpTarball /Users/jeffreymendez/Projects/class2/package.json not in flight; adding
+17 verbose addTmpTarball validating metadata from /Users/jeffreymendez/Projects/class2/package.json
+18 verbose tar unpack /Users/jeffreymendez/Projects/class2/package.json
+19 verbose tar unpacking to /var/folders/rf/02f6ss4j6c3bytm81z4r9trc0000gn/T/npm-2436-bb5ce1d8/unpack-c2e5fc036fb8
+20 silly gentlyRm /var/folders/rf/02f6ss4j6c3bytm81z4r9trc0000gn/T/npm-2436-bb5ce1d8/unpack-c2e5fc036fb8 is being purged
+21 verbose gentlyRm don't care about contents; nuking /var/folders/rf/02f6ss4j6c3bytm81z4r9trc0000gn/T/npm-2436-bb5ce1d8/unpack-c2e5fc036fb8
+22 silly gunzTarPerm modes [ '755', '644' ]
+23 error not a package /Users/jeffreymendez/Projects/class2/package.json
+24 error addLocal Could not install /Users/jeffreymendez/Projects/class2/package.json
+25 verbose stack Error: ENOENT, open '/var/folders/rf/02f6ss4j6c3bytm81z4r9trc0000gn/T/npm-2436-bb5ce1d8/unpack-c2e5fc036fb8/package.json'
+25 verbose stack     at Error (native)
+26 verbose cwd /Users/jeffreymendez/Projects/class2
+27 error Darwin 14.5.0
+28 error argv "node" "/usr/local/bin/npm" "install" "package.json"
+29 error node v0.12.7
+30 error npm  v2.11.3
+31 error path /var/folders/rf/02f6ss4j6c3bytm81z4r9trc0000gn/T/npm-2436-bb5ce1d8/unpack-c2e5fc036fb8/package.json
+32 error code ENOENT
+33 error errno -2
+34 error enoent ENOENT, open '/var/folders/rf/02f6ss4j6c3bytm81z4r9trc0000gn/T/npm-2436-bb5ce1d8/unpack-c2e5fc036fb8/package.json'
+34 error enoent This is most likely not a problem with npm itself
+34 error enoent and is related to npm not being able to find a file.
+35 verbose exit [ -2, true ]
