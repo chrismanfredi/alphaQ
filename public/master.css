@@ -10,8 +10,18 @@ header{
 	margin-bottom: 4%;
 }
 .form-group{
+  width:80%;
+  padding:20px;
   border-radius: 6px;
   background-color: gray;
+  background-image: url("../images/pattern.png");
+}
+label{
+  color: white;
+}
+h2{
+  text-align: center;
+  color:blue;
 }
 
 header h1{
