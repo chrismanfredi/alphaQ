@@ -11,11 +11,7 @@ angular.module('dynamicFormApp', [])
     // array to hold the form data
 		$scope.formData=[];
 
-    // function generates random number for ID
-    function rand() {
-    var x = Math.floor((Math.random() * 100) + 1);
-    return x;
-    }
+
 
     // variable contains json object
     var users = [
@@ -32,8 +28,7 @@ angular.module('dynamicFormApp', [])
     {
       // this value is hidden from the user 
     	placeholder: 'ID',
-      // calls random funciton 
-    	value: rand(),
+    	value: "",
     	type: 'hidden',
     	name: 'empId'
       
