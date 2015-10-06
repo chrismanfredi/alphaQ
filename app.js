@@ -1,7 +1,27 @@
+var fs = require('fs');
+
 var express = require('express'),
 app = express(), 
-exphbs  = require('express-handlebars');
+exphbs  = require('express-handlebars'), mongoose = require('mongoose');
 
+mongoose.connect('mongodb://localhost/test');
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function (callback) {
+  // yay!
+});
+
+fs.readdirSync(__dirname + '/models').forEach(function (file) {
+    if (~file.indexOf('.js')) require(__dirname + '/models/' + file);
+});
+
+var peopleSchema = mongoose.Schema({
+	_id: String,
+    name: String
+});
+
+var People = mongoose.model('People');
 
 //view engine
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
