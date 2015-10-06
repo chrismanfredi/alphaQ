@@ -2,8 +2,19 @@ html {
   position: relative;
   min-height: 100%;
 }
+.form-group{
+  padding:20px;
+  border-radius: 6px;
+  background-color: gray;
+}
 .liner{
+  text-align: center;
+  color:blue;
+}
+label{
+  font-weight: bold;
   font-style: italic;
+  color:blue;
 }
 header {
   background: #222;
