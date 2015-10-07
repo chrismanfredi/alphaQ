@@ -1,4 +1,4 @@
-var fs = require('fs');
+// var fs = require('fs');
 
 var express = require('express'),
 app = express(), 
@@ -12,16 +12,15 @@ db.once('open', function (callback) {
   // yay!
 });
 
-fs.readdirSync(__dirname + '/models').forEach(function (file) {
-    if (~file.indexOf('.js')) require(__dirname + '/models/' + file);
-});
+// fs.readdirSync(__dirname + '/application').forEach(function (file) {
+//     if (~file.indexOf('.js')) require(__dirname + '/application/' + file);
+// });
 
 var peopleSchema = mongoose.Schema({
-	_id: String,
+  _id: String,
     name: String
 });
 
-var People = mongoose.model('People');
 
 //view engine
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
@@ -37,10 +36,9 @@ var port = process.env.PORT || 3000;
 
 
 app.get('/', function (req, res) {
-  // renders home page 	
+  // renders home page  
   res.render('home');
 })
  
 app.listen(port);
 console.log("server active on port:", port);
-
