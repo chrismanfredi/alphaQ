@@ -12,23 +12,22 @@ header{
   width:60%;
 }
 .form-group{
-  
   padding:20px;
   border-radius: 6px;
   background-color: gray;
   background-image: url("../images/esche.png");
 }
 label{
-  color: white;
+  color: #BDB76B;
 }
 h2{
   text-align: center;
-  color:gray;
+  color:#BDB76B;
 }
 header h1{
 	margin: 0px;
 	padding: 0px;
-	color: #F6F1F1;
+	color: #BDB76B;
 }
 form{
 	margin-top: 4%;
